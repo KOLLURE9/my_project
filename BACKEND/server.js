@@ -41,6 +41,6 @@ app.use("/profile",doctorProfileRouter);
 app.use("/payment",paymentRouter);
 
 //listen to PORT
-app.listen(4005, () =>
+app.listen(4006, () =>
   console.log('Example app listening on port no: 4000!'),
 );

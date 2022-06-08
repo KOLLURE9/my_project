@@ -15,6 +15,10 @@
     "express": "^4.17.3",
     "joi": "^17.6.0",
     "mongoose": "^6.2.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "react-stripe": "^0.1.0",
+    "react-stripe-checkout": "^2.6.3",
+    "stripe": "^9.6.0",
+    "uuid": "^8.3.2"
   }
 }
