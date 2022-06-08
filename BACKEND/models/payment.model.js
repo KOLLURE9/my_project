@@ -2,7 +2,11 @@ const mongoose = require('mongoose')
 
 const paymentSchema  = new mongoose.Schema({   
        
-   
+    name: {
+        type: String,
+        required: true,
+    
+    },
     amount: {
         type: Number,
         required:true
@@ -17,14 +21,11 @@ const paymentSchema  = new mongoose.Schema({
         required:true
     },
 
-    receipt_email:{
+    receiptEmail:{
         type: String,
         required: true
-    },
-     
+    }       
 })
 
-
-const paymentDetails=mongoose.model("PaymentDetails",paymentSchema);
-
-module.exports=paymentDetails;
+const PaymentMethod = mongoose.model("payment",paymentSchema);
+module.exports = PaymentMethod ;

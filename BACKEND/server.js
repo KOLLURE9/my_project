@@ -27,7 +27,7 @@ const physicalPatientRouter = require("./routes/physicalPatient.profile.route.js
 const onlinePatientRouter = require("./routes/onlinePatient.profile.route.js");
 const chechupDetailsRouter = require("./routes/checkupDetails.route.js");
 const doctorProfileRouter = require("./routes/doctor.profile.route.js");
-//const paymentRouter = require("./routes/payment.route.js");
+const paymentRouter = require("./routes/payment.route.js");
 
 //app.use("/user",userRouter);
 //app.use("/doctor",staffRouter);
@@ -38,9 +38,9 @@ app.use("/physicalPatient",physicalPatientRouter);
 app.use("/onlinePatient",onlinePatientRouter);
 app.use("/checkupDetails",chechupDetailsRouter);
 app.use("/profile",doctorProfileRouter);
-//app.use("/payment",paymentRouter);
+app.use("/payment",paymentRouter);
 
 //listen to PORT
-app.listen(4002, () =>
+app.listen(4005, () =>
   console.log('Example app listening on port no: 4000!'),
 );
